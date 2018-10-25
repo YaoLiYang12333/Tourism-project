@@ -1,0 +1,504 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+html, body {
+  height: 100%;
+  font-family: "微软雅黑", Georgia, Serif;
+}
+
+header {
+  position: relative;
+}
+.nav {
+  width: 100%;
+  position: relative;
+}
+
+.nav .logo {
+  width: 170px;
+  height: 136px;
+  position: absolute;
+  left: 60px;
+
+}
+
+.nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_head {
+  width: 100%;
+  min-height: 40px;
+  background-color: rgb(53, 53, 53);
+}
+
+.nav_head span {
+  margin-left: 280px;
+  color: rgb(144, 144, 144);
+  line-height: 40px;
+  letter-spacing: 4px;
+
+}
+.right{
+  float: right;
+  color: #fff;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.right img{
+  height: 30px;
+  float: left;
+}
+.nav_content {
+  position: absolute;
+  left: 270px;
+  width: 60%;
+  min-height: 96px;
+}
+
+.nav_content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.nav_content ul li {
+  box-sizing: border-box;
+  flex: 1;
+  border-right: 1px solid rgb(177, 178, 179, 0.6);
+  line-height: 96px;
+  text-align: center;
+  color: #4F504F;
+}
+
+.nav_content ul li:hover {
+  color: #4DD389;
+}
+header .big_pic {
+  width: 100%;
+  margin-top: 96px;
+
+}
+header .big_pic img{
+  width: 100%;
+height: 500px;
+}
+
+.welcome {
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  width: 54%;
+  height: 120px;
+  border: 2px #fff solid;
+  text-align: center;
+}
+
+.welcome p {
+  line-height: 120px;
+  font-size: 40px;
+  font-weight: bold;
+  color:rgb(244, 61, 111);
+  text-shadow: 2px 2px 2px rgb(198, 209, 196);
+}
+
+/* 小介绍 */
+
+.introduce {
+  width: 85%;
+  height: 30%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.introduce_left {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+.introduce_left p {
+  font-size: 40px;
+  padding-top: 40px;
+  color: rgb(116, 116, 116);
+}
+
+.introduce_right {
+  width: 60%;
+  height: 100%;
+  float: right;
+}
+
+.introduce_right p {
+  color: rgb(158, 158, 158);
+}
+
+/* 3个小吃 */
+
+.food {
+  width: 90%;
+  height: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+}
+
+.food_content {
+  box-sizing: border-box;
+  flex: 1;
+  margin: 0 20px;
+  position: relative;
+}
+
+.food_content img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.food_content .fir {
+  height: 0;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: .5s;
+  perspective: 1000px;
+}
+
+.food_content_in {
+  background: rgb(0, 82, 56);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+  transform: rotateX(-90deg);
+  transition: all .5s;
+  transform-origin: top;
+  text-align: center;
+  font-size: 30px;
+}
+
+.food_content_in p {
+  color: #fff;
+  margin-top: 30%;
+  font-size: 50px;
+}
+
+.food_content:hover .fir {
+  height: 100%;
+}
+
+.food_content:hover .food_content_in {
+  transform: rotateX(0deg);
+  height: 100%;
+}
+
+/* 第二板块--菜单 */
+
+.menu {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  background: rgb(151, 130, 75);
+}
+
+.menu .kong {
+  height: 10%;
+  width: 100%;
+}
+
+.menu_head {
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.menu_head_left {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+.menu_head_left p {
+  word-spacing: 2px;
+  color: #fff;
+}
+.menu_head_left h3{
+  word-spacing: 2px;
+  color: #fff;
+}
+
+.menu_head_right {
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+.menu_head_right h1 {
+  color: rgb(1, 82, 56);
+  padding-top: 20%;
+}
+
+.menu_content {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.menu_content_left {
+  width: 40%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.menu_content_left .table{
+
+}
+.menu_content_left img {
+  width: 35%;
+  height: 35%;
+  margin: 5%;
+  display: block;
+  float: left;
+  border: 5px rgb(177, 181, 180) solid;
+}
+.menu_content_left img:hover{
+  cursor:pointer;
+}
+.table{
+  display: none;
+}
+.table:nth-child(1){
+  display: block;
+}
+.ye ul{
+  width: 100%;
+  height: 28px;
+  position: absolute;
+  left: 10%;
+  text-align: center;
+  bottom: 20px;
+}
+.ye ul li{
+  width: 28px;
+  float: left;
+  cursor: pointer;
+  height: 28px;
+  margin-left: 10px;
+  background: #fff;
+  line-height: 28px;
+  border: 1px solid rgb(194, 194, 194);
+  font-size: 12px;
+  color: rgb(149, 149, 149);
+}
+.ye ul li:hover{
+  border-color: rgb(8, 173, 226);
+}
+.ye ul .width1{
+  width: 35px;
+}
+.ye ul .width2{
+  width: 55px;
+}
+.menu_content_right {
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+.menu_content_right ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.menu_content_right li {
+  box-sizing: border-box;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 20px;
+}
+
+.menu_content_right li img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  float: left;
+  display: block;
+  margin-right: 30px;
+}
+
+.menu_content_right li p {
+  width: 100%;
+}
+
+/* 4个框 */
+.native{
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 40px;
+  position: relative;
+}
+.native_pic{
+  width: 30%;
+  height: 40%;
+  float: left;
+  margin-left: 3%;
+  margin-top: 3%;
+  position: relative;
+  overflow: hidden;
+}
+
+.native_pic img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.native_pic p{
+  position: absolute;
+  z-index: 100;
+  font-size: 35px;
+  color:#fff;
+  right:-20%;
+  bottom:-20%;
+  z-index: 101;
+}
+.vi_bg{
+  border-bottom: 50px solid #97824b;
+  border-left: 50px solid transparent;
+  bottom: 0;
+  height: 0;
+  opacity: .95;
+  position: absolute;
+  right: 0;
+  transition: all 0.5s ease-out;
+  width: 0;
+  z-index: 100;
+}
+.native_pic:hover .vi_bg{
+  border-bottom: 500px solid #ec7246;
+  border-left: 430px solid transparent;
+}
+/* .native_pic:hover  p{
+  display: block;
+} */
+/* 页脚 */
+
+
+.footer {
+  height: 250px;
+  float: left;
+  width: 100%;
+  background: #111111;
+  position: relative;
+}
+
+
+.footer table {
+  color: #fff;
+  margin-top: 40px;
+  position: absolute;
+  left: 10px;
+  max-width: 20%;
+
+}
+
+.footer table td {
+  padding: 13px;
+  min-width:120px;
+}
+
+.call {
+  color: #fff;
+  margin-left: 50px;
+  font-size: 14px;
+  width: 30%;
+  position: absolute;
+  right:30%;
+}
+
+.call table td {
+  padding: 5px;
+}
+
+.erweima {
+  margin-left: 20px;
+  margin-top: 40px;
+  float: left;
+  color: #fff;
+  display:flex;
+  position: absolute;
+  right: 10%;
+}
+
+.app{
+  margin-left: 20px;
+}
+.copyright {
+  background: rgba(74, 36, 94);
+  width: 100%;
+  height: 50px;
+  float: left;
+  position: absolute;
+  bottom:0;
+}
+
+.copyright .copyright1 {
+  float: left;
+  margin-left: 20%;
+  margin-top: 10px;
+}
+
+.copyright .copyright2 {
+  float: left;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width:1200px) {
+
+
+  .nav ul {
+    margin-left: 0;
+  }
+
+  .view{
+    display: none;
+  }
+  .erweima {
+    display: none;
+  }
+  .wechat{
+    display: none;
+  }
+  .app{
+    display: none;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+  .call {
+    right: 10%;
+  }
+}
