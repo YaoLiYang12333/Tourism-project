@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<link rel="stylesheet" href="css/anji.css">
+
+<script src="js/jquery.js" charset="utf-8"></script>
+
+<body>
+
+
+
+  <div class="container">
+    <div class="list">
+      <img src="images/down.png" alt="">
+      <ul>
+        <li><a href="index.html">首页</a></li>
+        <li><a href="news_index.html">新闻资讯</a></li>
+        <li><a href="history_index.html">历史文化</a></li>
+        <li><a href="food_index.html">特色美食</a></li>
+        <li><a href="sight_index.html">景点景区</a></li>
+        <li><a href="hotel_index.html">酒店民宿</a></li>
+        <li><a href="traffic_index.html">交通路线</a></li>
+      </ul>
+    </div>
+    <div class="login">
+      <div class="login_head">
+        <div class="login_head_content">
+          <button type="button" name="button" id="login">登录</button>
+          <button type="button" name="button" id="register">注册</button>
+        </div>
+      </div>
+      <div class="login_group">
+        <div class="login_content_1">
+          <form action="" method="post">
+            <table>
+              <tr>
+                <td width="65px">用户名</td>
+                <td><input type="text" id="username_1" name="username_1" value="" placeholder="请输入用户名">
+                  <p></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>密码</td>
+                <td><input type="password" id="password_1" name="password_1" value="" placeholder="请输入密码">
+                  <p></p>
+                </td>
+              </tr>
+              <tr>
+                <td>验证码</td>
+                <td> <input type="text" name="code" placeholder="请输入验证码">
+                  <canvas id="canvas" width="120" height="40"></canvas>
+                  <p></p>
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><span class="code_move"><a href="#">看不清，换一张</a></span></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td><button name="code_sumbit" id="login_1">登录</button></td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="login_content_2">
+          <form action="">
+            <table>
+              <tr>
+                <td>用户名</td>
+                <td>
+                  <input type="text" name="username_2" id="username_2" value="" placeholder="请输入用户名">
+                  <p>请输入6-18位的数字和字母</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>密码</td>
+                <td>
+                  <input type="password" name="password_2" id="password_2" value="" placeholder="请输入密码">
+                  <p>请输入8-18位的数字和字母</p>
+                </td>
+              </tr>
+
+              <tr>
+                <td>确认密码</td>
+                <td>
+                  <input type="password" name="password_3" value="" placeholder="请再次输入密码">
+                  <p>请输入相同的密码</p>
+                </td>
+              </tr>
+              <tr>
+                <td>手机号</td>
+                <td><input type="text" name="telephone" value="" placeholder="请输入手机号码">
+                  <p>输入11位的手机号</p>
+                </td>
+              </tr>
+              <tr>
+                <td>邮箱</td>
+                <td><input type="text" name="email" value="" placeholder="请输入邮箱地址">
+                  <p>输入如：***@qq.com</p>
+                </td>
+              </tr>
+              </tr>
+
+              <tr>
+                <td></td>
+                <td><button name="code_sumbit" id="login_2">提交</button></td>
+              </tr>
+            </table>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <div class="pic">
+      <img src="images/001.jpg" alt="山水图">
+      <img src="images/002.jpg" alt="山水图">
+      <img src="images/003.jpg" alt="山水图">
+      <img src="images/004.jpg" alt="山水图">
+    </div>
+</body>
+<script src="js/anji.js">
+</script>
+
+</html>
